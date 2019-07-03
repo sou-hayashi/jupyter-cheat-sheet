@@ -5,7 +5,7 @@ init: ## Install all packages
 	pipenv install
 
 .PHONY: run
-notebook: ## Run jupyter lab
+run: ## Run jupyter lab
 	@mkdir -p $(NOTEBOOK_DIR)
 	@pipenv run -- jupyter lab --notebook-dir=$(NOTEBOOK_DIR)
 
